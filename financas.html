@@ -9,36 +9,93 @@
 </head>
 
 <body>
+    <h1 style="padding-left: 50px">Imbibics</h1>
     <form>
         <table style="border-color: black" border="2">
             <thead>
-                <th colspan="3">Imbibics
+                <tr align="center"><td colspan="2">Entrada</td></tr>
 
-                </th>
             </thead>
 
             <tr>
-                <th style="width: 30%;"><input type="date" style="border: none">
+                <th style="width:50%"><input type="date" style="border: none">
 
                 </th>
 
-                <th style="width: 30%;" colspan="2"><a>Valor: <input type="number" required style="border: none" placeholder="Digite o valor aqui"></a>
+                <th style="width: 50%;" colspan="2"><a>Valor: <input type="number" required style="border: none" placeholder="Digite o valor aqui"></a>
 
                 </th>
 
             </tr>
 
-            <tr align="center">
-                <td><a>Digite a descrição da movimetação</a>
+            <tr>
 
-                </td>
-
-                <td><textarea style="width: 99%;" rows="5"></textarea>
+                <td colspan="2"><textarea style="width: 99%;" rows="5" placeholder="Digite a descrição:"></textarea>
 
                 </td>
                 
             </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="movpos">Selecione a entrada</label>
+                    <select name="movpos" required>
+                        <option value="">Selecione</option>
+                        <option value="1">Salário</option>
+                        <option value="2">Achei na rua</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Salvar"></td>
+
+            </tr>
         </table>
+
+    </form>
+
+    <br><br>
+
+    <form>
+        <table style="border-color: black" border="2">
+            <thead>
+                <tr align="center"><td colspan="2">Saida</td></tr>
+
+            </thead>
+
+            <tr>
+                <th style="width:50%"><input type="date" style="border: none">
+
+                </th>
+
+                <th style="width: 50%;" colspan="2"><a>Valor: <input type="number" required style="border: none" placeholder="Digite o valor aqui"></a>
+
+                </th>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="2"><textarea style="width: 99%;" rows="5" placeholder="Digite a descrição:"></textarea>
+
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="movpos">Selecione a entrada</label>
+                    <select name="movpos" required>
+                        <option value="">Selecione</option>
+                        <option value="1">Contas</option>
+                        <option value="2">Perdi na rua</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2"><input type="submit" value="Salvar"></td>
+        </tr>
+        </table>
+
     </form>
 
     
